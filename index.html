@@ -642,7 +642,7 @@
           <div class="hero-top-right">
             <span>Identity / Packaging / Art Direction</span>
             <br>
-            <span>09.24.26 — 23:00 EGY</span>
+            <span><span id="local-time">--.--.--</span></span>
           </div>
         </div>
 
@@ -895,7 +895,7 @@
               <a class="contact-pill magnetic" href="https://wa.me/201010166582" target="_blank" rel="noopener"><i></i>WhatsApp</a>
               <a class="contact-pill magnetic" href="https://www.instagram.com/kha1ed.ramadan/" target="_blank" rel="noopener"><i></i>Instagram</a>
               <a class="contact-pill magnetic" href="https://www.linkedin.com/in/khaledramadan/" target="_blank" rel="noopener"><i></i>LinkedIn</a>
-              <a class="contact-pill magnetic" href="https://www.behance.net/kha1edRamadan" target="_blank" rel="noopener"><i></i>Behance</a>
+              <a class="contact-pill magnetic" href="https://www.behance.net/kha1edRamadan" target="_blank" rel="noopener"><i></i>Behance</a><a class="contact-pill magnetic" href="https://kha1edramadan.myportfolio.com/work" target="_blank" rel="noopener"><i></i>Portfolio</a>
             </div>
           </div>
         </div>
@@ -906,7 +906,7 @@
   <footer>
     <div class="footer-inner">
       <div>© 2026 Khaled Ramadan</div>
-      <div class="footer-center">Brand / Identity / Packaging</div>
+      <div class="footer-center">Brand / Identity / Packaging · Built with HTML / CSS / JS / GSAP / Lenis / Three.js</div>
       <div class="footer-right">Mansoura / Egypt</div>
     </div>
   </footer>
@@ -984,7 +984,7 @@
       }
       requestAnimationFrame(tick);
 
-      function initSite(){
+      function updateLocalTime(){var el=document.getElementById("local-time");if(!el)return;var now=new Date();var date=now.toLocaleDateString("en-GB",{day:"2-digit",month:"2-digit",year:"2-digit",timeZone:"Africa/Cairo"});var time=now.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Africa/Cairo"});el.textContent=date+" · "+time+" EGY"}setInterval(updateLocalTime,1000);updateLocalTime();\n\n      function initSite(){
         /* LENIS */
         var lenis;
         if(!reduced && window.Lenis){
