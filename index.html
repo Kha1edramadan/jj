@@ -984,7 +984,9 @@
       }
       requestAnimationFrame(tick);
 
-      function updateLocalTime(){var el=document.getElementById("local-time");if(!el)return;var now=new Date();var date=now.toLocaleDateString("en-GB",{day:"2-digit",month:"2-digit",year:"2-digit",timeZone:"Africa/Cairo"});var time=now.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Africa/Cairo"});el.textContent=date+" · "+time+" EGY"}setInterval(updateLocalTime,1000);updateLocalTime();\n\n      function initSite(){
+      function updateLocalTime(){var el=document.getElementById("local-time");if(!el)return;var now=new Date();var date=now.toLocaleDateString("en-GB",{day:"2-digit",month:"2-digit",year:"2-digit",timeZone:"Africa/Cairo"});var time=now.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",hour12:false,timeZone:"Africa/Cairo"});el.textContent=date+" · "+time+" EGY"}setInterval(updateLocalTime,1000);updateLocalTime();
+
+      function initSite(){
         /* LENIS */
         var lenis;
         if(!reduced && window.Lenis){
